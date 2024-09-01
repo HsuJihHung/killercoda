@@ -1,6 +1,6 @@
 {
-  "title": "Pod Configuration",
-  "description": "調整傳入pod的參數設定",
+  "title": "Configuration",
+  "description": "使用env傳入環境參數",
   "details": {
     "intro": {
       "title": "Intro",
@@ -10,7 +10,7 @@
     },
     "steps": [
       {
-        "title": "List all pods",
+        "title": "Kubectl edit",
         "text": "step1.md"
       }
     ],
