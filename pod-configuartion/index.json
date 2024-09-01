@@ -10,8 +10,9 @@
     },
     "steps": [
       {
-        "title": "Kubectl edit",
-        "text": "step1.md"
+        "title": "pod",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
       }
     ],
     "finish": {
