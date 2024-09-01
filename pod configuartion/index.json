@@ -1,0 +1,30 @@
+{
+  "title": "Pod Configuration",
+  "description": "調整傳入pod的參數設定",
+  "details": {
+    "intro": {
+      "title": "Intro",
+      "text": "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "List all pods",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "web.yml", "target": "~/", "chmod": "+w"},
+        {"file": "check_pod_running.sh", "target": "/tmp", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
