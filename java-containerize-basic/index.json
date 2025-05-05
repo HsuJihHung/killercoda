@@ -1,0 +1,31 @@
+{
+  "title": "容器基礎_JAVA",
+  "description": "JAVA專案容器化",
+  "details": {
+    "intro": {
+      "title": "Intro",
+      "text": "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Dockerfile",
+        "text": "step1/step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "demo-0.0.1-SNAPSHOT.jar", "target": "~/workdir", "chmod": "+x"},
+        {"file": "Dockerfile", "target": "~/workdir", "chmod": "+w"},
+        {"file": "check_pod_running.sh", "target": "/tmp", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
