@@ -1,6 +1,6 @@
 {
   "title": "容器基礎_JAVA",
-  "description": "JAVA專案容器化",
+  "description": "JAVA容器化",
   "details": {
     "intro": {
       "title": "Intro",
@@ -12,6 +12,14 @@
       {
         "title": "Dockerfile",
         "text": "step1/step1.md"
+      },
+      {
+        "title": "Image",
+        "text": "step2/step2.md"
+      },
+      {
+        "title": "Container",
+        "text": "step3/step3.md"
       }
     ],
     "finish": {

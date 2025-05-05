@@ -1,7 +1,7 @@
-FROM openjdk:17
+FROM
 
 COPY
 
 WORKDIR
 
-CMD ["java", "-jar", ""]
+CMD ["", "", ""]
