@@ -14,4 +14,4 @@
 
 修改完成後，再開啟一次頁面進行檢視
 
-> <strong>Note</strong>: 可能需要先將原來的pod刪除
+> <strong>Note</strong>: 需要先將原來的pod刪除
