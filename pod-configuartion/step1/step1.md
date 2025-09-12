@@ -12,6 +12,18 @@
 - key: `BACKGROUND_COLOR`
 - value: `red`
 
+範例:
+
+```yaml
+spec:
+  containers:
+  - image: jihhung/flask:color
+    name: web
+    env:
+    - name: #TODO key名稱
+      value: #TODO key值
+```
+
 修改完成後，再開啟一次頁面進行檢視
 
 > <strong>Note</strong>: 需要先將原來的pod刪除

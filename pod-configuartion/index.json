@@ -1,6 +1,6 @@
 {
   "title": "Configuration",
-  "description": "使用env傳入環境參數",
+  "description": "Pod參數設定",
   "details": {
     "intro": {
       "title": "Intro",
@@ -13,6 +13,11 @@
         "title": "pod",
         "text": "step1/step1.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "configMap",
+        "text": "step2/step2.md",
+        "verify": "step2/verify.sh"
       }
     ],
     "finish": {
