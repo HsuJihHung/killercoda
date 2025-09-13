@@ -11,18 +11,20 @@
 
 建立configMap:
 
-`kubectl create configmap demo-config \
+```
+kubectl create configmap demo-configmap \
   --from-literal WELCOME_TEXT='Welcome Everyone !!' \
-  --dry-run=client -o yaml`
+  --dry-run=client -o yaml
+```{{copy}}
 
 使用方式:
 ```yaml
 env:
-- name: WELCOME_TEXT
+- name: WELCOME_TEXT # 傳入環境參數名稱
   valueFrom:
     configMapKeyRef:
-      name: # TODO configMap名稱
-      key: WELCOME_TEXT
+      name: demo-configmap # configMap名稱
+      key: WELCOME_TEXT # configMap key名稱
 ```
 
 修改完成後，再開啟一次頁面進行檢視

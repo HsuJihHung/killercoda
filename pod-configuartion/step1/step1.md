@@ -10,7 +10,7 @@
 
 請修改web pod設定，加入env參數，參數明細如下：
 - key: `BACKGROUND_COLOR`
-- value: `red`
+- value: `gray`
 
 範例:
 
