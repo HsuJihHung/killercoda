@@ -18,6 +18,11 @@
         "title": "configMap",
         "text": "step2/step2.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "secret",
+        "text": "step3/step3.md",
+        "verify": "step3/verify.sh"
       }
     ],
     "finish": {
