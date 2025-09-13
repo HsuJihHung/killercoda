@@ -7,13 +7,13 @@
 
 請建立configMap，並修改web pod設定，以環境變數方式傳入configMap參數，參數明細如下：
 - key: `WELCOME_TEXT`
-- value: `歡迎來到設定教學`
+- value: `Welcome Everyone !!`
 
 建立configMap:
 
-`kubectl create configmap demo-config
-  --from-literal=WELCOME_TEXT=歡迎來到設定教學 
-  --dry-run=client -o yaml`{{exec}}
+`kubectl create configmap demo-config \
+  --from-literal WELCOME_TEXT='Welcome Everyone !!' \
+  --dry-run=client -o yaml`
 
 使用方式:
 ```yaml
@@ -21,7 +21,7 @@ env:
 - name: WELCOME_TEXT
   valueFrom:
     configMapKeyRef:
-      name: 
+      name: # TODO configMap名稱
       key: WELCOME_TEXT
 ```
 
