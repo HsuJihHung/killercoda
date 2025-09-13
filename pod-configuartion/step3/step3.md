@@ -9,7 +9,7 @@
 - key: `API_TOKEN`
 - value: `Aa123456`
 
-建立configMap:
+建立secret:
 
 ```
 kubectl create secret generic demo-secret \
